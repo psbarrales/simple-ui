@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ConfigProvider>
       <Head>
-        <title>Wordle ::..</title>
+        <title>Simple UI ::..</title>
       </Head>
       <Component {...pageProps} />
     </ConfigProvider>
