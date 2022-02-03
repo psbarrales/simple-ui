@@ -5,7 +5,7 @@ const { Title } = Typography
 const HomePage = () => {
   return (
     <div>
-      <Title>Wordle!</Title>
+      <Title>Home page!</Title>
     </div>
   )
 }

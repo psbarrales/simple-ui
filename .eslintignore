@@ -1,6 +1,6 @@
 node_modules/*
 jest.config.js
-test/*
+jest.setup.js
+__test__/*
 coverage/*
 docker/*
-src/config/*
