@@ -1,0 +1,10 @@
+node_modules
+src/.next
+
+.DS_Store
+npm-debug.log
+# .env
+coverage
+
+\.idea/
+tmp/
