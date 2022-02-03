@@ -1,4 +1,6 @@
 # Simple - UI
+![Estado en GitHub Action](https://github.com/psbarrales/simple-ui/actions/workflows/ui.yml/badge.svg)
+
 Simple web site on Next.JS with Ant Design Framework
 ## Prerequisites
 ```
