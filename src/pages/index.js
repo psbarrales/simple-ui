@@ -1,6 +1,4 @@
-import { Typography } from 'antd'
-
-const { Title } = Typography
+import Title from 'components/Title'
 
 const HomePage = () => {
   return (
