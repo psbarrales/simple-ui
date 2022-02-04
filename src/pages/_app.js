@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import { ConfigProvider } from 'antd'
 import 'antd/dist/antd.css'
+import 'css/main.css'
 
 if (typeof document === 'undefined') {
   React.useLayoutEffect = React.useEffect
