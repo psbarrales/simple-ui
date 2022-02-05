@@ -1,8 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 import { ConfigProvider } from 'antd'
+import { ThemeProvider } from 'styled-components'
 import 'antd/dist/antd.css'
 import 'css/main.css'
+import theme from 'css/theme'
 
 if (typeof document === 'undefined') {
   React.useLayoutEffect = React.useEffect
@@ -14,7 +16,9 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Simple UI ::..</title>
       </Head>
-      <Component {...pageProps} />
+      <ThemeProvider theme={theme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </ConfigProvider>
   )
 }
