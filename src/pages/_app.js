@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { ConfigProvider } from 'antd'
 import { ThemeProvider } from 'styled-components'
 import 'antd/dist/antd.css'
-import 'public/css/main.css'
+import 'styles/css/main.css'
 import theme from 'styles/theme'
 
 if (typeof document === 'undefined') {
@@ -18,35 +18,35 @@ function MyApp({ Component, pageProps }) {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/public/site/apple-touch-icon.png"
+          href="/site/apple-touch-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="512x512"
-          href="/public/site/android-chrome-512x512.png"
+          href="/site/android-chrome-512x512.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="/public/site/android-chrome-192x192.png"
+          href="/site/android-chrome-192x192.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/public/site/favicon-32x32.png"
+          href="/site/favicon-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/public/site/favicon-16x16.png"
+          href="/site/favicon-16x16.png"
         />
         <meta name="msapplication-TileColor" content="#5398ff" />
         <meta name="theme-color" content="#5398ff"></meta>
-        <link rel="icon" href="/public/site/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/site/favicon.ico" type="image/x-icon" />
       </Head>
       <ThemeProvider theme={theme}>
         <Component {...pageProps} />

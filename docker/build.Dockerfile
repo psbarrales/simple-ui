@@ -31,7 +31,7 @@ COPY ./docker/create-certificate.sh ./docker/create-certificate.sh
 # Building app
 # You only need to copy next.config.js if you are NOT using the default configuration
 # COPY --from=builder /app/next.config.js ./
-COPY --from=builder /workspace/src/public ./src/public
+COPY --from=builder /workspace/public ./public
 COPY --from=builder /workspace/package.json ./package.json
 
 # Automatically leverage output traces to reduce image size

@@ -12,14 +12,16 @@ docker
 ## 3rd party libraries
 * [Next.js](https://nextjs.org/)
 * [Ant Design](https://ant.design/)
+* [Styled Components](https://styled-components.com/)
 ## Folder Structure
 
+    public/                      # Public Next.js conventions
     src/
     ├── components               # React components
     ├── containers               # React containers
     ├── hooks                    # React hooks
     ├── pages                    # Pages Next.js conventions
-    ├── public                   # Public Next.js conventions
+    ├── styles                   # Theme and styles javascript
     ├── utils                    # Utility funcs
     └── README.md
 
