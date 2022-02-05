@@ -3,8 +3,8 @@ import Head from 'next/head'
 import { ConfigProvider } from 'antd'
 import { ThemeProvider } from 'styled-components'
 import 'antd/dist/antd.css'
-import 'css/main.css'
-import theme from 'css/theme'
+import 'public/css/main.css'
+import theme from 'styles/theme'
 
 if (typeof document === 'undefined') {
   React.useLayoutEffect = React.useEffect

@@ -8,7 +8,7 @@ if [ -z $NODE_ENV ]; then
 fi
 
 if [[ $NODE_ENV = "production" ]]; then
-  pm2-runtime start 'yarn start' &
+  pm2-runtime start 'node server.js' &
 else
   pm2-runtime start 'yarn dev' &
 fi
