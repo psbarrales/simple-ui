@@ -1,6 +1,8 @@
+const path = require('path')
+const next = require('next')
 const Koa = require('koa')
 const Router = require('koa-router')
-const next = require('next')
+const send = require('koa-send')
 const client = require('prom-client')
 
 const dev = process.env.NODE_ENV !== 'production'
@@ -17,9 +19,9 @@ const register = new Registry({
   prefix: `${process.env.PREFIX_METRICS || 'nodejs_'}_`,
   timeout: 5000,
 })
+const serveBase = path.join(process.cwd(), '/src/public')
 
 client.collectDefaultMetrics({ register })
-
 app.prepare().then(() => {
   router.get('/metrics', async (ctx) => {
     ctx.body = await register.metrics()
@@ -30,6 +32,12 @@ app.prepare().then(() => {
   router.get('/ping', async (ctx) => {
     ctx.body = 'PONG'
   })
+  router.get('/public/(.*)', async (ctx) =>
+    send(ctx, ctx.path.replace('/public', ''), {
+      root: serveBase,
+      immutable: true,
+    }),
+  )
   router.get('(.*)', async (ctx) => {
     await handler(ctx.req, ctx.res)
     ctx.respond = false

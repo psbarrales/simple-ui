@@ -32,10 +32,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-          <meta name="msapplication-TileColor" content="#5398ff" />
-          <meta name="theme-color" content="#5398ff"></meta>
-        </Head>
+        <Head />
         <body suppressHydrationWarning={true}>
           <Main suppressHydrationWarning={true} />
           <NextScript />
