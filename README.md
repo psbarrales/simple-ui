@@ -37,11 +37,9 @@ The server will be running on port 80 and SSL 443
 *  https://localhost
 
 ## Status endpoints
-`/metrics`: Get node metrics for prometheus tools
-
-`/up`: Return UP text
-
-`/ping`: Return PONG text
+*  `/metrics`: Get node metrics for prometheus tools
+*  `/up`: Return UP text
+*  `/ping`: Return PONG text
 
 ## Testing
 ### Linter
