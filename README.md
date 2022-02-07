@@ -1,6 +1,7 @@
 # Simple - UI
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Estado en GitHub Action](https://github.com/psbarrales/simple-ui/actions/workflows/ui.yml/badge.svg)
+![Estado en GitHub Action](https://github.com/psbarrales/simple-ui/actions/workflows/security.yml/badge.svg)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/5077d23911514ce2ba27625fcd4c2aec)](https://www.codacy.com/gh/psbarrales/simple-ui/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=psbarrales/simple-ui&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/5077d23911514ce2ba27625fcd4c2aec)](https://www.codacy.com/gh/psbarrales/simple-ui/dashboard?utm_source=github.com&utm_medium=referral&utm_content=psbarrales/simple-ui&utm_campaign=Badge_Coverage)
 
