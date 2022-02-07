@@ -6,17 +6,17 @@
 
 Simple web site on Next.JS with Ant Design Framework
 ## Prerequisites
-```
+```bash
 node
 docker
 ```
 
 ## 3rd party libraries
-* [Next.js](https://nextjs.org/)
-* [Ant Design](https://ant.design/)
-* [Styled Components](https://styled-components.com/)
+*  [Next.js](https://nextjs.org/)
+*  [Ant Design](https://ant.design/)
+*  [Styled Components](https://styled-components.com/)
 ## Folder Structure
-
+```plain
     public/                      # Public Next.js conventions
     src/
     ├── components               # React components
@@ -26,14 +26,15 @@ docker
     ├── styles                   # Theme and styles javascript
     ├── utils                    # Utility funcs
     └── README.md
+```
 
 ## Server Running
-```
+```bash
 docker-compose up
 ```
 The server will be running on port 80 and SSL 443
-* http://localhost
-* https://localhost
+*  http://localhost
+*  https://localhost
 
 ## Status endpoints
 `/metrics`: Get node metrics for prometheus tools
@@ -44,8 +45,8 @@ The server will be running on port 80 and SSL 443
 
 ## Testing
 ### Linter
-* `npm run lint`
-* `npm run lint:fix`
+*  `npm run lint`
+*  `npm run lint:fix`
 ### Jest
-* `npm run test`
-* `npm run test:coverage`
+*  `npm run test`
+*  `npm run test:coverage`
