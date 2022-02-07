@@ -1,11 +1,11 @@
-name: UI
+name: testing
 
 on:
   push:
     branches: [ master ]
 
 jobs:
-  testing:
+  lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -19,5 +19,21 @@ jobs:
         cache: 'yarn'
     - run: yarn
     - run: yarn lint
-    - run: yarn test
-    - run: yarn build
+  testing:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v2
+    - name: Preparar Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'yarn'
+    - run: yarn
+    - run: yarn test:coverage
+    - name: Enviar codacy-coverage-reporter
+      uses: codacy/codacy-coverage-reporter-action@v1
+      with:
+        project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
